@@ -1,0 +1,22 @@
+{
+  "name": "sever",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "João Alves <jp14700@gmail.com> (https://github.com/joaoalvess/example-yarn-package)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/sever.ts",
+    "knex-migrations": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  }
+}
