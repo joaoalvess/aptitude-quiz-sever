@@ -4,7 +4,7 @@ export async function up(knex: Knex) {
   return knex.schema.createTable('forms', table => {
     table.increments('id').primary();
     table.boolean('contato_infectado')
-    table.date('data')
+    table.string('data')
     table.boolean('tosse')
     table.boolean('febre')
     table.boolean('falta_ar')
