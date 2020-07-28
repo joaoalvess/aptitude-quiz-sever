@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/sever.ts",
-    "start": "ts-node-dev src/sever.ts",
+    "start": "ts-node src/server.ts",
     "knex-migrations": "knex --knexfile knexfile.ts migrate:latest"
   },
   "dependencies": {
