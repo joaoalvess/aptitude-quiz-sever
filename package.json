@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/sever.ts",
-    "start": "node src/server.js",
-    "knex-migrations": "knex --knexfile knexfile.ts migrate:latest"
+    "start": "node ./build/src/server.js",
+    "knex-migrations": "knex --knexfile knexfile.ts migrate:latest",
+    "build": "tsc --outDir build"
   },
   "dependencies": {
     "cors": "^2.8.5",
