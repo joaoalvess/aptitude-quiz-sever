@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/sever.ts",
-    "start": "node ./build/src/server.js",
+    "start": "node server.js",
     "knex-migrations": "knex --knexfile knexfile.ts migrate:latest",
     "build": "tsc --outDir build"
   },
